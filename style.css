@@ -1,0 +1,9 @@
+/* asterisk affects all elements*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: pink;
+    font-family: sans-serif;
+}
