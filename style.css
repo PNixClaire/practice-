@@ -10,7 +10,11 @@ body{
 }
 
 h3{
-    color: white
+    color: white;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 /*style the navbar*/
@@ -49,7 +53,7 @@ form{
 input{
     all: unset;
     font: 15 px system-ui;
-    color: white;
+    color: gray;
     height: 100%;
     width: 100%;
     padding: 6px 9px;
