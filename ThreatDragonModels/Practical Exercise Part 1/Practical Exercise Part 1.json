@@ -3006,6 +3006,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -3089,7 +3090,6 @@
               ]
             },
             "id": "bd85afcf-a9d1-4f29-a28d-30aa64a4e60e",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Admin",
@@ -3140,6 +3140,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -3223,7 +3224,6 @@
               ]
             },
             "id": "ccf382ff-cfc1-4078-879f-d42709948872",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Web \nBrowser",
@@ -3259,6 +3259,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -3342,7 +3343,6 @@
               ]
             },
             "id": "cf612484-11f9-4efe-a174-336f41fce3f6",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Candidate Registration\nController",
@@ -3405,6 +3405,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -3488,7 +3489,6 @@
               ]
             },
             "id": "34dd2e05-a457-457a-8f0b-809fa0bf32fc",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
               "name": "MongoDB",
