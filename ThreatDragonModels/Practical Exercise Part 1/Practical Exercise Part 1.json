@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "acb7e113-08ec-4d12-8bd1-83c6500eeeed",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Voter",
@@ -172,6 +172,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -255,7 +256,6 @@
               ]
             },
             "id": "5bee134c-3856-40c4-b0ea-d7cf71e427c9",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Client\nWeb Browser",
@@ -313,6 +313,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -396,7 +397,6 @@
               ]
             },
             "id": "69460e8a-4e37-466a-9250-16bba588c639",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Node Js server",
@@ -485,6 +485,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -568,7 +569,6 @@
               ]
             },
             "id": "0d7ca08f-444b-4e91-a59d-ce9f588a4af2",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
               "name": "MongoDB",
@@ -802,74 +802,6 @@
             "vertices": []
           },
           {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Trust Boundary",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "labels": [
-              "Trust Boundary"
-            ],
-            "id": "d55f0123-9987-4419-930f-0a11eaa5bea3",
-            "source": {
-              "x": 730,
-              "y": 313
-            },
-            "target": {
-              "x": 1190,
-              "y": 310
-            },
-            "vertices": [
-              {
-                "x": 970,
-                "y": 290
-              }
-            ]
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Trust Boundary",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "labels": [
-              "Trust Boundary"
-            ],
-            "id": "213f462e-0249-42b3-ad44-928713ecf373",
-            "source": {
-              "x": 630,
-              "y": -35
-            },
-            "target": {
-              "x": 630,
-              "y": 490
-            },
-            "vertices": [
-              {
-                "x": 660,
-                "y": 90
-              },
-              {
-                "x": 680,
-                "y": 230
-              }
-            ]
-          },
-          {
             "shape": "flow",
             "attrs": {
               "line": {
@@ -958,6 +890,74 @@
               "y": 440
             },
             "vertices": []
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Perimeter Firewall",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Perimeter Firewall"
+            ],
+            "id": "213f462e-0249-42b3-ad44-928713ecf373",
+            "source": {
+              "x": 630,
+              "y": -35
+            },
+            "target": {
+              "x": 630,
+              "y": 490
+            },
+            "vertices": [
+              {
+                "x": 660,
+                "y": 90
+              },
+              {
+                "x": 680,
+                "y": 230
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "App-to-DB-trust",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "App-to-DB-trust"
+            ],
+            "id": "d55f0123-9987-4419-930f-0a11eaa5bea3",
+            "source": {
+              "x": 730,
+              "y": 313
+            },
+            "target": {
+              "x": 1190,
+              "y": 310
+            },
+            "vertices": [
+              {
+                "x": 970,
+                "y": 290
+              }
+            ]
           }
         ]
       },
