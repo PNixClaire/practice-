@@ -3734,9 +3734,18 @@
             ]
           }
         ]
+      },
+      {
+        "id": 5,
+        "title": "Vote Casting",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.4.1",
+        "cells": []
       }
     ],
-    "diagramTop": 5,
+    "diagramTop": 6,
     "reviewer": "",
     "threatTop": 20
   }
