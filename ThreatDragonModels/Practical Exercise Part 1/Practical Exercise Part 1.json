@@ -1870,13 +1870,18 @@
               "width": 220,
               "height": 360
             },
+            "attrs": {
+              "label": {
+                "text": "Dependencies"
+              }
+            },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "bb9b345e-9a46-47a3-b593-592e17f1d8fd",
             "zIndex": -1,
+            "id": "bb9b345e-9a46-47a3-b593-592e17f1d8fd",
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "Trust Boundary",
+              "name": "Dependencies",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
@@ -1903,6 +1908,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -1986,7 +1992,6 @@
               ]
             },
             "id": "3641d381-5e6a-4575-91ef-7f8056ff3e7d",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Admin",
@@ -2037,6 +2042,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -2120,7 +2126,6 @@
               ]
             },
             "id": "dee10c4a-2769-40bd-a2bc-bb885abf3708",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Admin \nWeb Browser",
@@ -2156,6 +2161,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -2239,7 +2245,6 @@
               ]
             },
             "id": "09d602f8-d902-46b8-ae41-07d71ac521a9",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Node JS \n(Voter Registration\nController)",
@@ -2275,6 +2280,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -2358,7 +2364,6 @@
               ]
             },
             "id": "17e03734-bf8a-485c-a91f-99e05d163cbf",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "Crypto \nModule",
@@ -2434,6 +2439,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -2517,7 +2523,6 @@
               ]
             },
             "id": "f21dbe84-8bb5-46e3-b654-9f6a38dbf2db",
-            "zIndex": 5,
             "data": {
               "type": "tm.Store",
               "name": "Mongo DB",
@@ -2914,13 +2919,13 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Trust Boundary",
+              "name": "Perimeter Firewall",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
             },
             "labels": [
-              "Trust Boundary"
+              "Perimeter Firewall"
             ],
             "id": "16e55c5a-d53b-446e-882d-00158ed9f185",
             "source": {
@@ -2946,13 +2951,13 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Trust Boundary",
+              "name": "App-to-DB-trust",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
             },
             "labels": [
-              "Trust Boundary"
+              "App-to-DB-trust"
             ],
             "id": "9cdce626-90f8-4e4c-bafe-f3e0da203a7e",
             "source": {
