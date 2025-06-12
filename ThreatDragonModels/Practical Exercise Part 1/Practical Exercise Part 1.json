@@ -990,6 +990,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -1073,7 +1074,6 @@
               ]
             },
             "id": "2761a4c1-d750-46ba-a4ef-1f129ccd3a22",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Admin",
@@ -1124,6 +1124,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -1207,7 +1208,6 @@
               ]
             },
             "id": "7d33341c-b8eb-4f13-88a5-aefab18749db",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Web \nBrowser",
@@ -1243,6 +1243,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -1326,7 +1327,6 @@
               ]
             },
             "id": "526a9ef5-9786-4836-8bb9-908dde41e20e",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Node JS \n(Authentication)",
@@ -1402,6 +1402,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -1485,7 +1486,6 @@
               ]
             },
             "id": "4715ae15-30ef-4a04-b88e-c86b3fb140f1",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
               "name": "MongoDB",
@@ -1795,13 +1795,13 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Trust Boundary",
+              "name": "Perimeter Firewall",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
             },
             "labels": [
-              "Trust Boundary"
+              "Perimeter Firewall"
             ],
             "id": "bbf4a3f1-5105-4150-bd45-499e9459c2f5",
             "source": {
@@ -1827,13 +1827,13 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Trust Boundary",
+              "name": "App-to-DB-trust",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
             },
             "labels": [
-              "Trust Boundary"
+              "App-to-DB-trust"
             ],
             "id": "96a5d823-0f42-4514-9195-7d9203bf8fbb",
             "source": {
